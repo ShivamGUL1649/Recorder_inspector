@@ -1,0 +1,1010 @@
+{
+  "testName": "day-3-smart-recorder-test",
+  "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+  "locatorStrategy": "playwright-stable",
+  "createdAt": "2026-05-25T08:44:15.384Z",
+  "steps": [
+    {
+      "action": "click",
+      "locator": "page.locator('xpath=//div[contains(@class,\\'orangehrm-login-error\\')]//div')",
+      "locatorType": "relative-xpath",
+      "selectorPlan": {
+        "type": "relative-xpath",
+        "value": "xpath=//div[contains(@class,'orangehrm-login-error')]//div"
+      },
+      "confidence": 70,
+      "reason": "Relative XPath uses stable parent class.",
+      "matchCount": 1,
+      "isUnique": true,
+      "needsAIReview": false,
+      "locatorCandidates": [
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//div[contains(@class,\\'orangehrm-login-error\\')]//div')",
+          "confidence": 70,
+          "reason": "Relative XPath uses stable parent class.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//div[contains(@class,'orangehrm-login-error')]//div"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//div[contains(@class,\\'oxd-sheet\\')]')",
+          "confidence": 65,
+          "reason": "Relative XPath uses useful class attribute.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//div[contains(@class,'oxd-sheet')]"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('div.oxd-sheet')",
+          "confidence": 65,
+          "reason": "CSS selector uses useful class.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "div.oxd-sheet"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "text",
+          "locator": "page.getByText('Username : Admin Password : admin123')",
+          "confidence": 50,
+          "reason": "Uses Playwright visible text locator. Not unique. Matched 0 elements.",
+          "selectorPlan": {
+            "type": "text",
+            "value": "Username : Admin Password : admin123"
+          },
+          "matchCount": 0,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//div[normalize-space()=\\'Username : Admin Password : admin123\\']')",
+          "confidence": 50,
+          "reason": "Relative XPath uses visible text. Not unique. Matched 0 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//div[normalize-space()='Username : Admin Password : admin123']"
+          },
+          "matchCount": 0,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//div')",
+          "confidence": 10,
+          "reason": "Weak fallback relative XPath using tag only. Not unique. Matched 26 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//div"
+          },
+          "matchCount": 26,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('div')",
+          "confidence": 10,
+          "reason": "Weak fallback CSS selector using tag only. Not unique. Matched 26 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "div"
+          },
+          "matchCount": 26,
+          "isUnique": false,
+          "needsAIReview": true
+        }
+      ],
+      "playwrightCommand": "await page.locator('xpath=//div[contains(@class,\\'orangehrm-login-error\\')]//div').click();"
+    },
+    {
+      "action": "click",
+      "locator": "page.getByText('Username : Admin')",
+      "locatorType": "text",
+      "selectorPlan": {
+        "type": "text",
+        "value": "Username : Admin"
+      },
+      "confidence": 80,
+      "reason": "Uses Playwright visible text locator.",
+      "matchCount": 1,
+      "isUnique": true,
+      "needsAIReview": false,
+      "locatorCandidates": [
+        {
+          "type": "text",
+          "locator": "page.getByText('Username : Admin')",
+          "confidence": 80,
+          "reason": "Uses Playwright visible text locator.",
+          "selectorPlan": {
+            "type": "text",
+            "value": "Username : Admin"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p[normalize-space()=\\'Username : Admin\\']')",
+          "confidence": 80,
+          "reason": "Relative XPath uses visible text.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p[normalize-space()='Username : Admin']"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//div[contains(@class,\\'oxd-sheet\\')]//p')",
+          "confidence": 40,
+          "reason": "Relative XPath uses stable parent class. Not unique. Matched 2 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//div[contains(@class,'oxd-sheet')]//p"
+          },
+          "matchCount": 2,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p[contains(@class,\\'oxd-text\\')]')",
+          "confidence": 35,
+          "reason": "Relative XPath uses useful class attribute. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p[contains(@class,'oxd-text')]"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('p.oxd-text')",
+          "confidence": 35,
+          "reason": "CSS selector uses useful class. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "p.oxd-text"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p')",
+          "confidence": 10,
+          "reason": "Weak fallback relative XPath using tag only. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('p')",
+          "confidence": 10,
+          "reason": "Weak fallback CSS selector using tag only. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "p"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        }
+      ],
+      "playwrightCommand": "await page.getByText('Username : Admin').click();"
+    },
+    {
+      "action": "click",
+      "locator": "page.getByText('Username : Admin')",
+      "locatorType": "text",
+      "selectorPlan": {
+        "type": "text",
+        "value": "Username : Admin"
+      },
+      "confidence": 80,
+      "reason": "Uses Playwright visible text locator.",
+      "matchCount": 1,
+      "isUnique": true,
+      "needsAIReview": false,
+      "locatorCandidates": [
+        {
+          "type": "text",
+          "locator": "page.getByText('Username : Admin')",
+          "confidence": 80,
+          "reason": "Uses Playwright visible text locator.",
+          "selectorPlan": {
+            "type": "text",
+            "value": "Username : Admin"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p[normalize-space()=\\'Username : Admin\\']')",
+          "confidence": 80,
+          "reason": "Relative XPath uses visible text.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p[normalize-space()='Username : Admin']"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//div[contains(@class,\\'oxd-sheet\\')]//p')",
+          "confidence": 40,
+          "reason": "Relative XPath uses stable parent class. Not unique. Matched 2 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//div[contains(@class,'oxd-sheet')]//p"
+          },
+          "matchCount": 2,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p[contains(@class,\\'oxd-text\\')]')",
+          "confidence": 35,
+          "reason": "Relative XPath uses useful class attribute. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p[contains(@class,'oxd-text')]"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('p.oxd-text')",
+          "confidence": 35,
+          "reason": "CSS selector uses useful class. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "p.oxd-text"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p')",
+          "confidence": 10,
+          "reason": "Weak fallback relative XPath using tag only. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('p')",
+          "confidence": 10,
+          "reason": "Weak fallback CSS selector using tag only. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "p"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        }
+      ],
+      "playwrightCommand": "await page.getByText('Username : Admin').click();"
+    },
+    {
+      "action": "fill",
+      "locator": "page.getByRole('textbox', { name: 'Username' })",
+      "locatorType": "role",
+      "selectorPlan": {
+        "type": "role",
+        "role": "textbox",
+        "name": "Username"
+      },
+      "value": "Admin",
+      "confidence": 95,
+      "reason": "Uses Playwright accessibility role and accessible name.",
+      "matchCount": 1,
+      "isUnique": true,
+      "needsAIReview": false,
+      "locatorCandidates": [
+        {
+          "type": "role",
+          "locator": "page.getByRole('textbox', { name: 'Username' })",
+          "confidence": 95,
+          "reason": "Uses Playwright accessibility role and accessible name.",
+          "selectorPlan": {
+            "type": "role",
+            "role": "textbox",
+            "name": "Username"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "placeholder",
+          "locator": "page.getByPlaceholder('Username')",
+          "confidence": 88,
+          "reason": "Uses Playwright placeholder locator.",
+          "selectorPlan": {
+            "type": "placeholder",
+            "value": "Username"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//input[@name=\\'username\\']')",
+          "confidence": 88,
+          "reason": "Relative XPath uses name attribute.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//input[@name='username']"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//input[@placeholder=\\'Username\\']')",
+          "confidence": 86,
+          "reason": "Relative XPath uses placeholder attribute.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//input[@placeholder='Username']"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('input[name=\"username\"]')",
+          "confidence": 84,
+          "reason": "CSS selector uses name attribute.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "input[name=\"username\"]"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('input[placeholder=\"Username\"]')",
+          "confidence": 82,
+          "reason": "CSS selector uses placeholder attribute.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "input[placeholder=\"Username\"]"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//input[contains(@class,\\'oxd-input\\')]')",
+          "confidence": 35,
+          "reason": "Relative XPath uses useful class attribute. Not unique. Matched 2 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//input[contains(@class,'oxd-input')]"
+          },
+          "matchCount": 2,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('input.oxd-input')",
+          "confidence": 35,
+          "reason": "CSS selector uses useful class. Not unique. Matched 2 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "input.oxd-input"
+          },
+          "matchCount": 2,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//input')",
+          "confidence": 10,
+          "reason": "Weak fallback relative XPath using tag only. Not unique. Matched 3 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//input"
+          },
+          "matchCount": 3,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('input')",
+          "confidence": 10,
+          "reason": "Weak fallback CSS selector using tag only. Not unique. Matched 3 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "input"
+          },
+          "matchCount": 3,
+          "isUnique": false,
+          "needsAIReview": true
+        }
+      ],
+      "playwrightCommand": "await page.getByRole('textbox', { name: 'Username' }).fill('Admin');"
+    },
+    {
+      "action": "click",
+      "locator": "page.getByText('Password : admin123')",
+      "locatorType": "text",
+      "selectorPlan": {
+        "type": "text",
+        "value": "Password : admin123"
+      },
+      "confidence": 80,
+      "reason": "Uses Playwright visible text locator.",
+      "matchCount": 1,
+      "isUnique": true,
+      "needsAIReview": false,
+      "locatorCandidates": [
+        {
+          "type": "text",
+          "locator": "page.getByText('Password : admin123')",
+          "confidence": 80,
+          "reason": "Uses Playwright visible text locator.",
+          "selectorPlan": {
+            "type": "text",
+            "value": "Password : admin123"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p[normalize-space()=\\'Password : admin123\\']')",
+          "confidence": 80,
+          "reason": "Relative XPath uses visible text.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p[normalize-space()='Password : admin123']"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//*[normalize-space()=\\'Username : Admin\\']/following::p[1]')",
+          "confidence": 74,
+          "reason": "Relative XPath uses stable nearby sibling/parent text.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//*[normalize-space()='Username : Admin']/following::p[1]"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//div[contains(@class,\\'oxd-sheet\\')]//p')",
+          "confidence": 40,
+          "reason": "Relative XPath uses stable parent class. Not unique. Matched 2 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//div[contains(@class,'oxd-sheet')]//p"
+          },
+          "matchCount": 2,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p[contains(@class,\\'oxd-text\\')]')",
+          "confidence": 35,
+          "reason": "Relative XPath uses useful class attribute. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p[contains(@class,'oxd-text')]"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('p.oxd-text')",
+          "confidence": 35,
+          "reason": "CSS selector uses useful class. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "p.oxd-text"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p')",
+          "confidence": 10,
+          "reason": "Weak fallback relative XPath using tag only. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('p')",
+          "confidence": 10,
+          "reason": "Weak fallback CSS selector using tag only. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "p"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        }
+      ],
+      "playwrightCommand": "await page.getByText('Password : admin123').click();"
+    },
+    {
+      "action": "click",
+      "locator": "page.getByText('Password : admin123')",
+      "locatorType": "text",
+      "selectorPlan": {
+        "type": "text",
+        "value": "Password : admin123"
+      },
+      "confidence": 80,
+      "reason": "Uses Playwright visible text locator.",
+      "matchCount": 1,
+      "isUnique": true,
+      "needsAIReview": false,
+      "locatorCandidates": [
+        {
+          "type": "text",
+          "locator": "page.getByText('Password : admin123')",
+          "confidence": 80,
+          "reason": "Uses Playwright visible text locator.",
+          "selectorPlan": {
+            "type": "text",
+            "value": "Password : admin123"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p[normalize-space()=\\'Password : admin123\\']')",
+          "confidence": 80,
+          "reason": "Relative XPath uses visible text.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p[normalize-space()='Password : admin123']"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//*[normalize-space()=\\'Username : Admin\\']/following::p[1]')",
+          "confidence": 74,
+          "reason": "Relative XPath uses stable nearby sibling/parent text.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//*[normalize-space()='Username : Admin']/following::p[1]"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//div[contains(@class,\\'oxd-sheet\\')]//p')",
+          "confidence": 40,
+          "reason": "Relative XPath uses stable parent class. Not unique. Matched 2 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//div[contains(@class,'oxd-sheet')]//p"
+          },
+          "matchCount": 2,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p[contains(@class,\\'oxd-text\\')]')",
+          "confidence": 35,
+          "reason": "Relative XPath uses useful class attribute. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p[contains(@class,'oxd-text')]"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('p.oxd-text')",
+          "confidence": 35,
+          "reason": "CSS selector uses useful class. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "p.oxd-text"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//p')",
+          "confidence": 10,
+          "reason": "Weak fallback relative XPath using tag only. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//p"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('p')",
+          "confidence": 10,
+          "reason": "Weak fallback CSS selector using tag only. Not unique. Matched 5 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "p"
+          },
+          "matchCount": 5,
+          "isUnique": false,
+          "needsAIReview": true
+        }
+      ],
+      "playwrightCommand": "await page.getByText('Password : admin123').click();"
+    },
+    {
+      "action": "fill",
+      "locator": "page.getByRole('textbox', { name: 'Password' })",
+      "locatorType": "role",
+      "selectorPlan": {
+        "type": "role",
+        "role": "textbox",
+        "name": "Password"
+      },
+      "value": "admin123",
+      "confidence": 95,
+      "reason": "Uses Playwright accessibility role and accessible name.",
+      "matchCount": 1,
+      "isUnique": true,
+      "needsAIReview": false,
+      "locatorCandidates": [
+        {
+          "type": "role",
+          "locator": "page.getByRole('textbox', { name: 'Password' })",
+          "confidence": 95,
+          "reason": "Uses Playwright accessibility role and accessible name.",
+          "selectorPlan": {
+            "type": "role",
+            "role": "textbox",
+            "name": "Password"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "placeholder",
+          "locator": "page.getByPlaceholder('Password')",
+          "confidence": 88,
+          "reason": "Uses Playwright placeholder locator.",
+          "selectorPlan": {
+            "type": "placeholder",
+            "value": "Password"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//input[@name=\\'password\\']')",
+          "confidence": 88,
+          "reason": "Relative XPath uses name attribute.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//input[@name='password']"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//input[@placeholder=\\'Password\\']')",
+          "confidence": 86,
+          "reason": "Relative XPath uses placeholder attribute.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//input[@placeholder='Password']"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//input[@type=\\'password\\' and @placeholder=\\'Password\\']')",
+          "confidence": 85,
+          "reason": "Relative XPath combines type and placeholder.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//input[@type='password' and @placeholder='Password']"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('input[name=\"password\"]')",
+          "confidence": 84,
+          "reason": "CSS selector uses name attribute.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "input[name=\"password\"]"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('input[placeholder=\"Password\"]')",
+          "confidence": 82,
+          "reason": "CSS selector uses placeholder attribute.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "input[placeholder=\"Password\"]"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//input[contains(@class,\\'oxd-input\\')]')",
+          "confidence": 35,
+          "reason": "Relative XPath uses useful class attribute. Not unique. Matched 2 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//input[contains(@class,'oxd-input')]"
+          },
+          "matchCount": 2,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('input.oxd-input')",
+          "confidence": 35,
+          "reason": "CSS selector uses useful class. Not unique. Matched 2 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "input.oxd-input"
+          },
+          "matchCount": 2,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//input')",
+          "confidence": 10,
+          "reason": "Weak fallback relative XPath using tag only. Not unique. Matched 3 elements.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//input"
+          },
+          "matchCount": 3,
+          "isUnique": false,
+          "needsAIReview": true
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('input')",
+          "confidence": 10,
+          "reason": "Weak fallback CSS selector using tag only. Not unique. Matched 3 elements.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "input"
+          },
+          "matchCount": 3,
+          "isUnique": false,
+          "needsAIReview": true
+        }
+      ],
+      "playwrightCommand": "await page.getByRole('textbox', { name: 'Password' }).fill('admin123');"
+    },
+    {
+      "action": "click",
+      "locator": "page.getByRole('button', { name: 'Login' })",
+      "locatorType": "role",
+      "selectorPlan": {
+        "type": "role",
+        "role": "button",
+        "name": "Login"
+      },
+      "confidence": 95,
+      "reason": "Uses Playwright accessibility role and accessible name.",
+      "matchCount": 1,
+      "isUnique": true,
+      "needsAIReview": false,
+      "locatorCandidates": [
+        {
+          "type": "role",
+          "locator": "page.getByRole('button', { name: 'Login' })",
+          "confidence": 95,
+          "reason": "Uses Playwright accessibility role and accessible name.",
+          "selectorPlan": {
+            "type": "role",
+            "role": "button",
+            "name": "Login"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//button[normalize-space()=\\'Login\\']')",
+          "confidence": 80,
+          "reason": "Relative XPath uses visible text.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//button[normalize-space()='Login']"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//div[contains(@class,\\'oxd-form-actions\\')]//button')",
+          "confidence": 70,
+          "reason": "Relative XPath uses stable parent class.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//div[contains(@class,'oxd-form-actions')]//button"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//button[contains(@class,\\'oxd-button\\')]')",
+          "confidence": 65,
+          "reason": "Relative XPath uses useful class attribute.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//button[contains(@class,'oxd-button')]"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('button.oxd-button')",
+          "confidence": 65,
+          "reason": "CSS selector uses useful class.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "button.oxd-button"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "relative-xpath",
+          "locator": "page.locator('xpath=//button')",
+          "confidence": 20,
+          "reason": "Weak fallback relative XPath using tag only.",
+          "selectorPlan": {
+            "type": "relative-xpath",
+            "value": "xpath=//button"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "css",
+          "locator": "page.locator('button')",
+          "confidence": 20,
+          "reason": "Weak fallback CSS selector using tag only.",
+          "selectorPlan": {
+            "type": "css",
+            "value": "button"
+          },
+          "matchCount": 1,
+          "isUnique": true,
+          "needsAIReview": false
+        },
+        {
+          "type": "text",
+          "locator": "page.getByText('Login')",
+          "confidence": 50,
+          "reason": "Uses Playwright visible text locator. Not unique. Matched 2 elements.",
+          "selectorPlan": {
+            "type": "text",
+            "value": "Login"
+          },
+          "matchCount": 2,
+          "isUnique": false,
+          "needsAIReview": true
+        }
+      ],
+      "playwrightCommand": "await page.getByRole('button', { name: 'Login' }).click();"
+    }
+  ]
+}
