@@ -1,21 +1,31 @@
 {
   "name": "ai-playwright-smart-recorder-frontend",
+  "private": true,
   "version": "1.0.0",
-  "description": "AI Playwright Smart Recorder Frontend POC",
+  "type": "module",
+  "homepage": "./",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "^4.3.2",
-    "vite": "^5.4.8",
-    "typescript": "^5.6.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.0"
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.1.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
   }
 }
